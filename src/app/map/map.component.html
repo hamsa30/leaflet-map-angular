@@ -1,0 +1,29 @@
+<!-- Map -->
+<div id="map"></div>
+
+<!-- Form -->
+<div class="container">
+<form [formGroup]="locationForm" class="location-form">
+  <div>
+    <label for="landmarkName">Landmark Name</label>
+    <input id="landmarkName" formControlName="landmarkName" readonly/>
+  </div>
+  <div>
+    <label for="latitude">Latitude</label>
+    <input id="latitude" formControlName="latitude" readonly />
+  </div>
+  <div>
+    <label for="longitude">Longitude</label>
+    <input id="longitude" formControlName="longitude" readonly />
+  </div>
+  <div class="btn-group">
+      <button mat-button (click)="cancel()" class="btn btn-cancel">Cancel</button>
+      <button mat-button (click)="save()" class="btn btn-save">Save</button>
+    </div>
+</form>
+</div>
+
+<!-- Loader -->
+<div *ngIf="loading" class="overlay"></div>
+<div *ngIf="loading" class="loader"></div>
+

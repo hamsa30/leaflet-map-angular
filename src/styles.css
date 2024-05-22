@@ -1,0 +1,19 @@
+/* HTML: <div class="loader"></div> */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+body,
+html {
+  height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Barlow', sans-serif;
+    /* Styles for headings */
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
